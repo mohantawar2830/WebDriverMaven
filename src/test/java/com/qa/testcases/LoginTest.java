@@ -26,6 +26,7 @@ public class LoginTest {
 		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("mohantawar");
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("mohan@2830");
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
+		driver.findElement(By.xpath("(//a[@class='topnavlink'])[3]")).click();
 	}
 	@AfterSuite
 	public void teardown()
