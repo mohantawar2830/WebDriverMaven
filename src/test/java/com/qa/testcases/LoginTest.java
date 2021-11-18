@@ -20,13 +20,12 @@ public class LoginTest {
 		 driver = new ChromeDriver();
 	}
 	@Test
-	public void doLogin()
+	public void doLogin() throws InterruptedException
 	{
-		driver.get("https://classic.freecrm.com/index.html");
-		driver.findElement(By.xpath("//input[@name='username']")).sendKeys("mohantawar");
-		driver.findElement(By.xpath("//input[@name='password']")).sendKeys("mohan@2830");
-		driver.findElement(By.xpath("//input[@type='submit']")).click();
-		driver.findElement(By.xpath("(//a[@class='topnavlink'])[3]")).click();
+		driver.get("https://en-gb.facebook.com/");
+		driver.findElement(By.xpath("//input[@id='email']"));
+		driver.findElement(By.xpath("//input[@id='pass']"));
+		driver.findElement(By.xpath("//button[@name='login']")).click();
 	}
 	@AfterSuite
 	public void teardown()
